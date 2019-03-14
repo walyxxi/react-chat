@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>React Chat</title>
+</head>
+<style>
+    body {
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 0 20px;
+    }
+
+    .container {
+        border: 2px solid #00ffff;
+        background-color: #b3ffff;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .darker {
+        border-color: #00cccc;
+        background-color: #00ffff;
+    }
+
+    .container img {
+        float: left;
+        max-width: 60px;
+        width: 100%;
+        margin-right: 20px;
+        border-radius: 20%;
+    }
+
+    .container img.right {
+        float: right;
+        margin-left: 20px;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="container darker text-center">
+            <h4>
+                <font color="blue"><b>REACT CHAT</b></font>
+            </h4>
+        </div>
+        <hr>
+        <div class="container">
+            <img src="src/img_avatar.png" alt="Avatar" style="width:100%;">
+            <h5><b>Waliyul Ardy</b></h5>
+            <p>Hello. How are you today?</p>
+        </div>
+        <div class="container">
+            <img src="src/img_avatar.png" alt="Avatar" style="width:100%;">
+            <h5><b>Waliyul Ardy</b></h5>
+            <p>Hello. How are you today?</p>
+        </div>
+        <hr>
+        <div class="container darker">
+            <form action="">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Your Name" />
+                <div style="height:5px;"><br></div>
+                <textarea type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Write your chat here!"></textarea>
+                <div style="height:10px;"><br></div>
+                <button type="submit" class="btn btn-primary">Post</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
