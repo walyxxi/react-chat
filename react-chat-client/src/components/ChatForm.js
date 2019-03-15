@@ -22,7 +22,12 @@ export default class ChatForm extends Component {
 
     handleSubmit(e) {
         if (this.state.name && this.state.message) {
-            this.props.postChat({ name: this.state.name, message: this.state.message })
+            const item = {
+                id: Date.now(),
+                name: this.state.name,
+                message: this.state.message
+            }
+            this.props.postChat(item)
 
             this.setState({ name: "", message: "" })
             e.preventDefault();
@@ -36,7 +41,7 @@ export default class ChatForm extends Component {
                     <input type="text" className="form-control" placeholder="Your Name" name="name"
                         onChange={this.handleNameChange} value={this.state.name} />
                     <div style={{ height: '5px' }}><br /></div>
-                    <textarea className="form-control" placeholder="Write your chat here!" name="message" 
+                    <textarea className="form-control" placeholder="Write your chat here!" name="message"
                         onChange={this.handleMessageChange} value={this.state.message}></textarea>
                     <div style={{ height: '5px' }}><br /></div>
                     <button type="submit" className="btn btn-primary"><i className="fas fa-share-square"></i> Post</button>

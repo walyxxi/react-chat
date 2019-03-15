@@ -2,13 +2,13 @@ import React from 'react';
 import Chat from './Chat';
 
 const ChatList = (props) => {
-    let datalist = props.messages.map((item, index) => {
+    let datalist = props.datas.map((item) => {
         return (
             <Chat
-                key={index}
+                key={item.id}
                 name={item.name}
                 message={item.message}
-                onDelete={() => props.deleteChat(index)}
+                onDelete={() => props.deleteChat(item.id)}
             />
         )
     })
